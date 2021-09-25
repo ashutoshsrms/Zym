@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coders gym</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* css reset */
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            color: white;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 20px;
+
+        }
+
+        .mid {
+            display: block;
+            width: 50%;
+            margin: 29px auto;
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+        }
+
+        /* .navbar{ */
+        /* display: inline-block; */
+        /* } */
+        .navbar li {
+            display: inline-block;
+            font-size: 22px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: aqua;
+        }
+
+        .left img {
+            width: 80px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 18px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: rgb(22, 20, 20);
+            color: white;
+            border: 2px solid gray;
+            margin: 0px 9px;
+            padding: 5px 14px;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            color: aqua;
+        }
+
+        .containar {
+           
+            border: 2px solid red;
+            margin: 90px 120px;
+            padding: 25px 74px ;
+            width: 25%;
+            border-radius: 10px;
+            border-color:white;
+            
+        }
+        .formdata input{
+            text-align: center;
+            display: block;
+            width: 70%;
+            border: 2px solid black;
+            border-radius: 8px;
+            padding: 6px;
+            margin: 3px auto;
+
+        }
+        .containar h1{
+            text-align: center;
+        }   
+         .btn1{
+            border: 2px solid white; 
+            width: 70%;
+            display: block;
+            padding: 5px;
+            margin: auto;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+
+        }
+        .btn1:hover{
+            color: aqua;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo2.png" alt="">
+            <div>
+                Ashu Fitness
+            </div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Register</button>
+            <button class="btn">Sing in</button>
+        </div>
+    </header>
+
+    <div class="containar">
+        <h1>Join Us </h1>
+        <form action="entry.php">
+            <div class="formdata">
+                <input type="text " name="" placeholder="Enter your name">
+            </div>
+            <br>
+            <div class="formdata">
+                <input type="text " name="" placeholder="Enter your Age">
+            </div>
+            <br>
+            <div class="formdata">
+                <input type="text " name="" placeholder="Enter your Mobile No">
+            </div>
+            <br>
+            <div class="formdata">
+                <input type="text " name="" placeholder="Enter your E-mail">
+            </div>
+            <br>
+            <div class="formdata">
+                <input type="text " name="" placeholder="Enter your Locality">
+            </div>
+            <br>
+
+            <div class="formdata">
+                <input type="text" name="" placeholder="Phone ">
+            </div>
+            <br>
+        </form>
+       <div class="btn1">Submit</div>
+    </div>
+</body>
+
+</html>
